@@ -1,6 +1,7 @@
 # language-ftl20n
-Syntax highlighter for **FTL** files used in [L20n framework](l20n.org)
+Atom syntax highlighter for **FTL** files used in [L20n framework](http://l20n.org)
 
+### Preview
 
 [See example file](/assets/ftl20n.example.ftl)
 ![Screenshot](/assets/screenshot.png)

@@ -1,17 +1,17 @@
 {
   "name": "language-l20n-ftl",
   "version": "0.0.0",
-  "description": "Syntax highlighter for FTL files used in L20n framework",
+  "description": "Atom syntax highlighter for FTL files used in L20n framework",
   "engines": {
     "atom": "*"
   },
   "dependencies": {},
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/ludekarts/language-ftl20n.git"
   },
   "bugs": {
-    "url": ""
+    "url": "https://github.com/ludekarts/language-ftl20n/issues"
   },
   "license": "MIT"
 }

@@ -7,24 +7,24 @@ sample-key-value = Value for the key.
 # sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 
 
-html-attributes = HTML Content.
+html-attribute = HTML Content.
  [html/title] Value for HTML `title` attribute.
 
 
 interpolations-with-values-and-lists = { PLURAL($counter) ->
   [0] No results.
   [1] We found { $counter } fesult.
- *[other] We found <strong>{ $counter }</strong> results
+ *[other] We found <strong>{ $counter }</strong> results.
  }
 
 
 get-value-from-lists = { $dynamic-value } { $key ->
    [pl]
-  *[other] This value is base on the `key` selection { get-value-from-list[$key] }
+  *[other] This value is base on the `key` selection { get-value-from-list[$key] }.
 }
 
 
-# Code example from L20n maual.
+# Code example from L20n manual.
 liked-photo = { LEN($people) ->
   [1]     { $people } likes
   [2]     { $people } like
@@ -40,5 +40,5 @@ liked-photo = { LEN($people) ->
 
 # Something outside of L20n lexical scope, but very helpful.
 <<<<<<<< HEAD
-  Conflicts at files merging stage.
+  Git Conflicts at files merging stage.
 >>>>>>> master
