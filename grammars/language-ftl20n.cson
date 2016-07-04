@@ -1,0 +1,77 @@
+'name': 'FTL20n'
+'scopeName': 'l20n.ftl'
+'fileTypes': ['ftl']
+'patterns': [
+    {
+      # L20n Id keys.
+      'match' : '[\\w|-]*\\s='
+      'name': 'entity.name.type.class.ftl20n'
+    }
+    {
+      # Arrows.
+      'match' : '\\s\\-\\>(\\s|\\n)'
+      'name': 'entity.name.type.class.ftl20n'
+    }
+    {
+      # Builtin keywords.
+      'match' : '(LEN|DROP|NUMBER|TAKE|PLURAL|LIST|DATE|DATETIME)'
+      'name': 'keyword.control.ftl20n'
+    }
+    {
+      # Parenthesis.
+      'match' : '(\\(|\\))'
+      'name': 'keyword.control.ftl20n'
+    }
+    {
+      # Dynamic variables: $variable
+      'match' : '\\$[a-zA-Z\\-_]+'
+      'name': 'variable.language.ftl20n'
+    }
+    {
+      # Interpolation { variables }
+      'match': '\\{(\\s\\$?[a-zA-Z\\-_]*\\s)\\}'
+      'captures':
+        '1':
+          'name': 'variable.language.ftl20n'
+      'name': 'source.ftl20n'
+    }
+    {
+      # Lists
+      'match' : '\\*?\\[([\\w\\-_]+?)\\]'
+      'name': 'string.quoted.ftl20n'
+    }
+    {
+      # HTML Attributes
+      'match' : '\\[html\\/[\\w\\-_]*\\]'
+      'name': 'support.constant.dom.ftl20n'
+    }
+    {
+      # Embeded HTML
+      'match' : '(<\\w+[^>]+>|<\\/+[^>]+>)'
+      'name': 'support.constant.dom.ftl20n'
+    }
+    {
+      # Get value
+      'match' : '[\\w\\-_]+\\[([\\$?\\w\\-_]+)\\]'
+      'captures':
+        '1':
+          'name': 'keyword.control.ftl20n'
+      'name': 'variable.language.ftl20n'
+    }
+    {
+      # Comments and Headers.
+      'match': '((^###.*###$)|(^#.*$))'
+      'captures':
+        '1':
+          'name': 'comment.block.ftl20n'
+        '2':
+          'name': 'markup.heading.heading-1.ftl20n'
+      'name': 'comment.block.ftl20n'
+    }
+    {
+      # Git conflict markers.
+      'begin': '\\<{7}'
+      'end': '\\>{7}.*\\n'
+      'name': 'support.function.ftl20n'
+    }
+]
