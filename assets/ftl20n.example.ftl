@@ -15,7 +15,7 @@ interpolations-with-values-and-lists = { PLURAL($counter) ->
   [0] No results.
   [1] We found { $counter } fesult.
  *[other] We found <strong>{ $counter }</strong> results.
- }
+}
 
 
 get-value-from-lists = { $dynamic-value } { $key ->
