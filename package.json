@@ -1,5 +1,5 @@
 {
-  "name": "language-l20n-ftl",
+  "name": "language-ftl20n",
   "version": "0.0.0",
   "description": "Atom syntax highlighter for FTL files used in L20n framework",
   "engines": {
